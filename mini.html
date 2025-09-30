@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Voting System</title>
+  <style>
+    body { font-family: Arial; text-align: center; }
+    .candidate { margin: 10px; padding: 10px; border: 1px solid #333; display: inline-block; }
+    button { padding: 8px 16px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Online Voting System</h1>
+  <h2>Choose Your Candidate</h2>
+
+  <div class="candidate">
+    <p>Candidate A</p>
+    <button onclick="vote('Candidate A')">Vote</button>
+  </div>
+
+  <div class="candidate">
+    <p>Candidate B</p>
+    <button onclick="vote('Candidate B')">Vote</button>
+  </div>
+
+  <p id="result"></p>
+
+  <script>
+    function vote(candidate) {
+      if (localStorage.getItem("hasVoted")) {
+        document.getElementById("result").innerText = "❌ You have already voted!";
+      } else {
+        localStorage.setItem("hasVoted", "true");
+        document.getElementById("result").innerText = "✅ Your vote for " + candidate + " has been recorded!";
+      }
+    }
+  </script>
+</body>
+</html>
