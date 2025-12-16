@@ -86,3 +86,59 @@
 
 ## 🏗️ Project Architecture
 
+### Architecture Benefits
+
+- **Scalability**: Each feature is isolated and self-contained [web:23]
+- **Maintainability**: Clear separation of concerns [web:23]
+- **Reusability**: Shared utilities and components across features [web:23]
+- **Testability**: Independent feature testing without side effects [web:24]
+- **Team Collaboration**: Multiple developers work on different features simultaneously [web:24]
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+| Technology     | Purpose        | Version |
+|---------------|----------------|---------|
+| **React**     | UI Framework   | 18.x    |
+| **TypeScript**| Type Safety    | 5.x     |
+| **CSS-in-JS** | Styling        | Latest  |
+| **Redux Toolkit** | State Management | Latest |
+| **Axios**     | HTTP Client    | Latest  |
+| **Jest + RTL**| Testing        | Latest  |
+| **Webpack/Vite** | Build Tool  | Latest  |
+
+### Backend
+
+| Technology     | Purpose         | Version |
+|---------------|-----------------|---------|
+| **Node.js**   | Runtime         | 18.x+   |
+| **Express**   | Web Framework   | 4.x     |
+| **TypeScript**| Type Safety     | 5.x     |
+| **PostgreSQL/MongoDB** | Database | Latest |
+| **Prisma/TypeORM** | ORM        | Latest  |
+| **JWT + Passport** | Auth       | Latest  |
+| **Jest + Supertest** | Testing  | Latest  |
+
+### DevOps & Tools
+
+| Tool            | Purpose          |
+|-----------------|------------------|
+| **Docker**      | Containerization |
+| **GitHub Actions** | CI/CD        |
+| **npm/yarn**    | Packages         |
+| **Git**         | Version control  |
+| **ESLint + Prettier** | Code quality |
+
+---
+
+## ⚙️ Installation & Setup
+
+### Prerequisites
+
+Before you begin, ensure you have installed: [web:18]
+
+
+
