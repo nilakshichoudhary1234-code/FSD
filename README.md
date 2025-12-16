@@ -37,9 +37,28 @@ This project is designed for:
 
 ## 📁 Project Structure
 
+📂 FSD/
+├── frontend/
+│ ├── html/ # UI structure and markup
+│ ├── css/ # Styling and layouts
+│ ├── javascript/ # Client-side logic
+│ └── index.html # Frontend entry point
+│
+├── backend/
+│ ├── server.js # Server entry point
+│ ├── routes.js # API routing
+│ ├── controller.js # Business logic
+│ └── database.js # Database connection
+│
+├── assets/ # Static resources
+└── README.md # Project documentation
+
+css
+Copy code
+
 ---
 
-## 🔄 Application Flow (Technical Diagram)
+## 🔄 Application Flow (Technical Overview)
 
 ```mermaid
 flowchart TD
@@ -52,6 +71,19 @@ flowchart TD
     E --> D
     D --> B
     B --> A
+🧩 Backend API Explanation
+Backend Responsibilities
+Handles HTTP requests from frontend
+
+Processes application logic
+
+Communicates with the database
+
+Returns structured JSON responses
+
+API Request Lifecycle
+mermaid
+Copy code
 sequenceDiagram
     participant Client
     participant API
@@ -60,12 +92,51 @@ sequenceDiagram
 
     Client->>API: HTTP Request
     API->>Controller: Route Handler
-    Controller->>Database: Query Data
+    Controller->>Database: Query Execution
     Database-->>Controller: Result
     Controller-->>API: JSON Response
     API-->>Client: Final Output
+📱 Responsive Design
+The frontend is designed to work across different screen sizes.
+
+Techniques Used
+CSS Flexbox
+
+CSS Grid
+
+Media Queries
+
+Responsive typography
+
+mermaid
+Copy code
 graph LR
     Mobile --> ResponsiveLayout
     Tablet --> ResponsiveLayout
     Desktop --> ResponsiveLayout
+🎨 UI Color Scheme
+Purpose	Color Code
+Primary	#1E3A8A
+Background	#0F172A
+Text	#FFFFFF
+Accent	#38BDF8
 
+✅ Key Highlights
+Clean full-stack architecture
+
+Clear separation of frontend and backend
+
+Backend API documented with diagrams
+
+Responsive UI design
+
+Suitable for academic and technical review
+
+🚀 Live Demo
+bash
+Copy code
+(Add your deployment link here)
+https://your-demo-link.com
+👩‍💻 Author
+Nilakshi Choudhary
+GitHub: https://github.com/nilakshichoudhary1234-code
