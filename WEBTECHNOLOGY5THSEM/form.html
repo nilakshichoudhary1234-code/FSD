@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <table border="10`" width="100%">
+  <h1>Registration Form</h1>
+  <tr>
+    <td align="center">First Name</td>
+    <td><input type="text" name="name" placeholder=" "></td>
+    
+  </tr>
+  <tr>
+    <td align="center">Last Name</td>
+    <td><input type="text" name="name" placeholder=" "></td>
+  </tr>
+  <tr>
+    <td align="center">Father's Name</td>
+    <td><input type="text" name="father_name" placeholder=" "></td>
+  </tr>
+  <tr>
+    <td align="center">Mother's Name</td>
+    <td><input type="text" name="mother_name" placeholder=" "></td>
+  </tr>
+  <tr>
+    <td align="center">Date of Birth</td>
+    <td><input type="date" name="dob" placeholder=" "></td>
+  </tr>
+  <tr>
+    <td align="center">Email</td>
+    <td><input type="email" name="email" placeholder=" "></td>
+  </tr>
+  <tr>
+    <td align="center">Gender</td>
+    <td>
+      <input type="radio" name="gender" value="male" id="male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female">
+      <label for="female">Female</label>
+    </td>
+  </tr>
+ <tr>
+    <td align="center">Choose course</td>
+    <td>
+      <select name="course" id="course">
+         <option value="--select--">--select--</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+        <option value="MCA">MCA</option>
+        <option value="MBA">MBA</option>
+      </select>
+        
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Hobbies</td>
+    <td>
+      <input type="checkbox" name="hobbies" value="Reading book" id="reading book">
+      <label for="reading book">Reading book</label>
+      <input type="checkbox" name="hobbies" value="singing" id="singing">
+      <label for="singing">Singing</label>
+      <input type="checkbox" name="hobbies" value="dancing" id="dancing">
+      <label for="dancing">Dancing</label>
+      <input type="checkbox" name="hobbies" value="playing" id="playing">
+      <label for="playing Cricket">Playing Cricket</label>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">Address</td>
+    <td><textarea name="address" id="address" cols="30" rows="2"></textarea></td>
+  </tr>
+  <tr>
+    <td align ="center">Photo</td>
+    <td><input type="file" name="photo" id="photo"></td>
+  </tr>
+  <tr>
+  
+    <td colspan="2"><input type="submit" value="Submit"></td>
+</body>
+</html>
